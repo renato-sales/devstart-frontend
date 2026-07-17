@@ -1,5 +1,5 @@
 :root {
-  --gray-dark: #0f172a;
+  --gray-dark: #031024;
   --gray-light: #f1f5f9;
   --orange-hover: orange;
   --blue-light: #dfe5f4;
@@ -87,4 +87,116 @@ header {
 .header__link-style:hover {
   background-color: var(--blue-dark);
   color: var(--gray-light);
+  transition: 0.3s;
+}
+
+.section-main {
+  background-color: var(--gray-dark);
+  padding: 4rem 2rem;
+}
+
+.section-main__info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.section-main__info__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section-main__info__left__top {
+  width: fit-content;
+  border: 1px solid var(--blue-medium);
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+}
+
+.section-main__info__left h1 {
+  font-size: 5.5rem;
+}
+
+.section-main__info__left__text-title {
+  color: var(--blue-medium);
+}
+
+.section-main__info__left__text-paragraph {
+  width: 85%;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.section-main__info__left__buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+.section-main__info__left__buttons__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: var(--blue-medium);
+  color: var(--gray-light);
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+
+.section-main__info__left__buttons__button:hover {
+  background-color: var(--blue-dark);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-main__info__left__buttons__button-learn-more {
+  background-color: var(--gray-dark);
+  color: var(--gray-light);
+  font-size: 1.8rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  border: 1px solid var(--gray-light);
+  font-weight: 600;
+}
+
+.section-main__info__left__buttons__button-learn-more:hover {
+  border-color: var(--orange-hover);
+  cursor: pointer;
+  color: var(--orange-hover);
+  transition: 0.3s;
+}
+
+.section-main__info__left__descriptions {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+
+.section-main__info__left__descriptions__info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.section-main__info__left__descriptions__info p {
+  line-height: 1.4;
+}
+
+.section-main__info__left__descriptions__info img {
+  width: 4rem;
+}
+
+.section-main__info__right {
+  display: flex;
+  align-self: end;
+}
+
+.section-main__info__right img {
+  width: 55rem;
 }

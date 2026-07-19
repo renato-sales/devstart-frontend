@@ -1,0 +1,74 @@
+[
+  {
+    "image": "../assets/main/section-courses/js-brands-solid-full.svg",
+    "titulo": "JavaScript Completo",
+    "descricao": "Aprenda JavaScript do básico ao avançado com projetos reais.",
+    "duracao": "40h",
+    "nivel": "Intermediário",
+    "classificacao": 4.8,
+    "preco": "R$ 89,90"
+  },
+  {
+    "image": "../assets/main/section-courses/react-brands-solid-full.svg",
+    "titulo": "React do Zero",
+    "descricao": "Aprenda a tecnologia React na prática do básico ao avançado.",
+    "duracao": "30h",
+    "nivel": "Avançado",
+    "classificacao": 4.9,
+    "preco": "R$ 99,90"
+  },
+  {
+    "image": "../assets/main/section-courses/html5-brands-solid-full.svg",
+    "titulo": "HTML5 e CSS3 Essencial",
+    "descricao": "Construa aplicações Frontend para páginas modernas e responsivas.",
+    "duracao": "25h",
+    "nivel": "Iniciante",
+    "classificacao": 4.7,
+    "preco": "R$ 59,90"
+  },
+  {
+    "image": "../assets/main/section-courses/node-brands-solid-full.svg",
+    "titulo": "Node.js Completo",
+    "descricao": "Crie projetos robustos de APIs e aplicações backend.",
+    "duracao": "35h",
+    "nivel": "Intermediário",
+    "classificacao": 4.8,
+    "preco": "R$ 94,90"
+  },
+  {
+    "image": "../assets/main/section-courses/python-brands-solid-full.svg",
+    "titulo": "Python para Iniciantes",
+    "descricao": "Aprenda os conceitos da lógica de programação com Python.",
+    "duracao": "28h",
+    "nivel": "Iniciante",
+    "classificacao": 4.6,
+    "preco": "R$ 69,90"
+  },
+  {
+    "image": "../assets/main/section-courses/square-git-brands-solid-full.svg",
+    "titulo": "Git e GitHub na Prática",
+    "descricao": "Aprenda como controlar o versionamento de projetos e aplicações.",
+    "duracao": "15h",
+    "nivel": "Iniciante",
+    "classificacao": 4.9,
+    "preco": "R$ 49,90"
+  },
+  {
+    "image": "../assets/main/section-courses/angular-brands-solid-full.svg",
+    "titulo": "Angular do Zero ao Avançado",
+    "descricao": "Desenvolva aplicações com robustas com a tecnologia Angular.",
+    "duracao": "45h",
+    "nivel": "Avançado",
+    "classificacao": 4.7,
+    "preco": "R$ 109,90"
+  },
+  {
+    "image": "../assets/main/section-courses/database-solid-full.svg",
+    "titulo": "Banco de Dados SQL",
+    "descricao": "Domine consultas, manipulação e modelagem de dados.",
+    "duracao": "20h",
+    "nivel": "Intermediário",
+    "classificacao": 4.5,
+    "preco": "R$ 74,90"
+  }
+]

@@ -29,48 +29,51 @@
       </div>
     </header>
     <main>
-      <section class="section-main">
-        <div class="section-main__info container">
-          <article class="section-main__info__left">
-            <span class="section-main__info__left__top"
+      <section class="section-hero">
+        <div class="section-hero__content container">
+          <article class="section-hero__content__left">
+            <span class="section-hero__content__left__top"
               >Transforme seu futuro</span
             >
             <h1>
               Aprenda. Pratique.
-              <span class="section-main__info__left__text-title"
+              <span class="section-hero__content__left__text-title"
                 >Conquiste.</span
               >
             </h1>
-            <p class="section-main__info__left__text-paragraph">
+            <p class="section-hero__content__left__text-paragraph">
               Cursos completos para você sair do zero e construir uma carreira
               de sucesso na tecnologia.
             </p>
-            <div class="section-main__info__left__buttons">
-              <button class="section-main__info__left__buttons__button">
+            <div class="section-hero__content__left__buttons">
+              <button
+                id="btnExploreCourses"
+                class="section-hero__content__left__buttons__button"
+              >
                 Explorar cursos &#8594;
               </button>
               <button
-                class="section-main__info__left__buttons__button-learn-more"
+                class="section-hero__content__left__buttons__button-learn-more"
               >
                 Saiba mais
               </button>
             </div>
-            <div class="section-main__info__left__descriptions">
-              <div class="section-main__info__left__descriptions__info">
+            <div class="section-hero__content__left__descriptions">
+              <div class="section-hero__content__left__descriptions__info">
                 <img
                   src="../assets/main/section_main/graduation-cap-solid-full.svg"
                   alt="chapeu formado"
                 />
                 <p>Conteúdo Atualizado</p>
               </div>
-              <div class="section-main__info__left__descriptions__info">
+              <div class="section-hero__content__left__descriptions__info">
                 <img
                   src="../assets/main/section_main/code-solid-full.svg"
                   alt="chapeu formado"
                 />
                 <p>Projetos Práticos</p>
               </div>
-              <div class="section-main__info__left__descriptions__info">
+              <div class="section-hero__content__left__descriptions__info">
                 <img
                   src="../assets/main/section_main/user-group-solid-full.svg"
                   alt="chapeu formado"
@@ -79,12 +82,51 @@
               </div>
             </div>
           </article>
-          <article class="section-main__info__right">
+          <article class="section-hero__content__right">
             <img
               src="../assets/main/section_main/img_main.png"
               alt="notebook"
             />
           </article>
+        </div>
+      </section>
+      <section id="section-explore-courses" class="section-courses">
+        <div class="section-courses__content container">
+          <h3>Nossos cursos</h3>
+          <h2>Escolha seu próximo desafio</h2>
+          <div class="section-courses__content__filter">
+            <div class="section-courses__content__search">
+              <input
+                type="text"
+                name="course"
+                id="searchCourse"
+                placeholder="Buscar curso..."
+              />
+              <button id="btnSearch">
+                <img
+                  src="../assets/main/section-courses/search.svg"
+                  alt="search"
+                />
+              </button>
+            </div>
+            <div class="section-courses__content__filter__select-level">
+              <select name="level" id="level">
+                <option disabled selected>Filtre por nível</option>
+                <option value="Todos">Todos os níveis</option>
+                <option value="Iniciante">Iniciante</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+              </select>
+              <img
+                src="../assets/main/section-courses/filter-solid-full.svg"
+                alt="filter"
+              />
+            </div>
+          </div>
+          <div id="listCourses" class="section-courses__cards"></div>
+          <a id="section-courses__info__all-courses" href="#"
+            >Ver todos os cursos &#8594;</a
+          >
         </div>
       </section>
     </main>

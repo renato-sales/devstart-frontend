@@ -90,24 +90,24 @@ header {
   transition: 0.3s;
 }
 
-.section-main {
+.section-hero {
   background-color: var(--gray-dark);
   padding: 4rem 2rem;
 }
 
-.section-main__info {
+.section-hero__content {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
 }
 
-.section-main__info__left {
+.section-hero__content__left {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-.section-main__info__left__top {
+.section-hero__content__left__top {
   width: fit-content;
   border: 1px solid var(--blue-medium);
   border-radius: 20px;
@@ -115,26 +115,26 @@ header {
   font-weight: bold;
 }
 
-.section-main__info__left h1 {
+.section-hero__content__left h1 {
   font-size: 5.5rem;
 }
 
-.section-main__info__left__text-title {
+.section-hero__content__left__text-title {
   color: var(--blue-medium);
 }
 
-.section-main__info__left__text-paragraph {
+.section-hero__content__left__text-paragraph {
   width: 85%;
   font-size: 2rem;
   line-height: 1.4;
 }
 
-.section-main__info__left__buttons {
+.section-hero__content__left__buttons {
   display: flex;
   gap: 4rem;
 }
 
-.section-main__info__left__buttons__button {
+.section-hero__content__left__buttons__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,13 +148,13 @@ header {
   font-weight: 600;
 }
 
-.section-main__info__left__buttons__button:hover {
+.section-hero__content__left__buttons__button:hover {
   background-color: var(--blue-dark);
   cursor: pointer;
   transition: 0.3s;
 }
 
-.section-main__info__left__buttons__button-learn-more {
+.section-hero__content__left__buttons__button-learn-more {
   background-color: var(--gray-dark);
   color: var(--gray-light);
   font-size: 1.8rem;
@@ -164,39 +164,200 @@ header {
   font-weight: 600;
 }
 
-.section-main__info__left__buttons__button-learn-more:hover {
+.section-hero__content__left__buttons__button-learn-more:hover {
   border-color: var(--orange-hover);
   cursor: pointer;
   color: var(--orange-hover);
   transition: 0.3s;
 }
 
-.section-main__info__left__descriptions {
+.section-hero__content__left__descriptions {
   display: flex;
   align-items: center;
   gap: 3rem;
   font-size: 1.6rem;
 }
 
-.section-main__info__left__descriptions__info {
+.section-hero__content__left__descriptions__info {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.section-main__info__left__descriptions__info p {
+.section-hero__content__left__descriptions__info p {
   line-height: 1.4;
 }
 
-.section-main__info__left__descriptions__info img {
+.section-hero__content__left__descriptions__info img {
   width: 4rem;
 }
 
-.section-main__info__right {
+.section-hero__content__right {
   display: flex;
   align-self: end;
 }
 
-.section-main__info__right img {
+.section-hero__content__right img {
   width: 55rem;
+}
+
+.section-courses {
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  padding: 4rem;
+}
+
+.section-courses__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-courses__content h3 {
+  color: var(--blue-medium);
+  text-transform: uppercase;
+}
+
+.section-courses__content h2 {
+  font-size: 3rem;
+}
+
+.section-courses__content__filter {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-courses__content__search {
+  display: flex;
+  align-items: center;
+}
+
+.section-courses__content__search input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 3px solid var(--gray-light);
+  outline: none;
+  width: 22vw;
+}
+
+.section-courses__content__search button {
+  border: none;
+  background-color: var(--gray-light);
+}
+
+.section-courses__content__search button img {
+  width: 3rem;
+}
+
+.section-courses__content__search button img:hover {
+  cursor: pointer;
+}
+
+.section-courses__content__filter__select-level select {
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  border: 3px solid var(--gray-light);
+  outline: none;
+}
+
+.section-courses__content__filter__select-level {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section-courses__content__filter__select-level img {
+  width: 2rem;
+  position: absolute;
+  right: 85%;
+}
+
+.section-courses__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.section-courses__content__search__font-color-search_failure {
+  color: red;
+  font-weight: 600;
+}
+
+.section-courses__cards__card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.section-courses__cards__card__content__img {
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--gray-dark);
+}
+
+.section-courses__cards__card__content__img img {
+  width: 8rem;
+}
+
+.section-courses__cards__card h3 {
+  text-transform: none;
+  color: var(--gray-dark);
+}
+
+.section-courses__cards__card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.section-courses__cards__card__info__specific {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 1rem 0;
+  border-top: 3px solid var(--gray-light);
+  border-bottom: 3px solid var(--gray-light);
+}
+
+.section-courses__cards__card__info__specific__time-level {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-courses__cards__card__info__specific__time-level img {
+  width: 2rem;
+}
+
+.section-courses__cards__card__info__price-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-courses__cards__card__info__price-button span {
+  font-weight: 600;
+}
+
+.section-courses__cards__card__info__price-button a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--blue-light);
+  background-color: var(--blue-medium);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+
+.section-courses__cards__card__info__price-button a:hover {
+  background-color: var(--blue-dark);
+}
+
+#section-courses__info__all-courses {
+  text-decoration: none;
+  color: var(--blue-medium);
+  font-weight: 600;
 }

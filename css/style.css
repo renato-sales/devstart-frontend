@@ -31,6 +31,10 @@ body {
 header {
   background-color: var(--gray-dark);
   padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header {
@@ -93,6 +97,7 @@ header {
 .section-hero {
   background-color: var(--gray-dark);
   padding: 4rem 2rem;
+  margin-top: 5rem;
 }
 
 .section-hero__content {
@@ -570,4 +575,78 @@ header {
 
 .section-location__content__right {
   width: 95%;
+}
+
+footer {
+  background-color: var(--gray-dark);
+  padding: 2rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  padding: 2rem 0;
+}
+
+.footer__info article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer__info__articicle__redes-sociais {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__info__articicle__redes-sociais img {
+  width: 3rem;
+}
+
+.footer__info__articicle__links a {
+  text-decoration: none;
+  color: var(--gray-light);
+  width: fit-content;
+}
+
+.footer__info__articicle__links a:hover {
+  color: var(--orange-hover);
+  transition: 0.5s;
+}
+
+.footer__info__articicle__links input {
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+.footer__input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__input button {
+  background-color: var(--blue-medium);
+  border-radius: 5px;
+  padding: 1rem;
+  border: none;
+  color: var(--gray-light);
+  font-weight: 600;
+}
+
+.footer__input button:hover {
+  background-color: var(--blue-dark);
+  cursor: pointer;
+}
+
+.footer__info__copiright {
+  text-align: center;
 }

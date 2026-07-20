@@ -9,6 +9,9 @@ import { renderCompanyMap } from "./modules/map.js";
 import { calculateRoute } from "./modules/route.js";
 import { loadTestimonials } from "./modules/testimonials.js";
 
+const linkCourses = document.querySelector("#link-courses");
+const linkHero = document.querySelector("#link-hero");
+
 const input = document.querySelector("#searchCourse");
 const listCourses = document.querySelector("#listCourses");
 const btnSearch = document.querySelector("#btnSearch");
@@ -35,6 +38,16 @@ allCourses.addEventListener("click", () => printAllCourses(listCourses));
 
 btnExploreCourses.addEventListener("click", () =>
   exploreCourses(sectionExploreCourses)
+);
+
+linkCourses.addEventListener("click", () =>
+  exploreCourses(sectionExploreCourses)
+);
+
+linkHero.addEventListener("click", () =>
+  document.querySelector(".header").scrollIntoView({
+    behavior: "smooth",
+  })
 );
 
 selectOption.addEventListener("change", () =>

@@ -1,4 +1,8 @@
+import { comments } from "../data/comments.js";
+import { getRandomUsers } from "../services/randomuser.js";
+
 loadCourses();
+loadTestimonials();
 const input = document.querySelector("#searchCourse");
 const listCourses = document.querySelector("#listCourses");
 const btnSearch = document.querySelector("#btnSearch");
@@ -10,6 +14,10 @@ const sectionExploreCourses = document.querySelector(
   "#section-explore-courses"
 );
 const selectOption = document.querySelector("#level");
+const listTestimonals = document.querySelector("#listTestimonials");
+const btnUpdateTestimonials = document.querySelector(
+  "#section-testimonials__update__testimonials"
+);
 
 function selectOptionChange() {
   const optionSelected = selectOption.value;
@@ -40,9 +48,7 @@ async function searchCourses() {
 async function loadCourses() {
   const response = await fetch("../data/courses.json");
   const data = await response.json();
-
   const courses = data.slice(0, 3);
-
   printCourses(courses);
 }
 
@@ -90,7 +96,6 @@ function printCourses(courses) {
 async function printAllCourses() {
   const response = await fetch("../data/courses.json");
   const data = await response.json();
-
   printCourses(data);
 }
 
@@ -110,6 +115,64 @@ async function filterSearchCourses() {
   }
 }
 
+function formatDate(dateString) {
+  const date = new Date(dateString);
+
+  return date
+    .toLocaleString("pt-BR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    })
+    .replace(",", "");
+}
+
+async function loadTestimonials() {
+  const data = await getRandomUsers();
+  const testimonials = data.slice(0, 3);
+  printTestimonials(testimonials);
+}
+
+function printTestimonials(testimonials) {
+  listTestimonals.innerHTML = "";
+
+  testimonials.forEach((testimonial) => {
+    const dataFormatada = formatDate(testimonial.registered.date);
+    const radomComment = comments[Math.floor(Math.random() * comments.length)];
+
+    listTestimonals.innerHTML += `
+      <article class="section-testimonials__cards__card">
+        <div class="section-testimonials__cards__card__content">
+          <img src="${testimonial.picture.medium}"/>
+          <div class="section-testimonials__cards__card__content__texts">
+            <h3>${testimonial.name.first} ${testimonial.name.last}</h3>
+            <span>${testimonial.login.username}</span>
+            <div>
+              <img src="../assets/main/section-courses/star-solid-full.svg" alt="image star"
+              />
+              <img src="../assets/main/section-courses/star-solid-full.svg" alt="image star"
+              />
+              <img src="../assets/main/section-courses/star-solid-full.svg" alt="image star"
+              />
+              <img src="../assets/main/section-courses/star-solid-full.svg" alt="image star"
+              />
+              <img src="../assets/main/section-courses/star-solid-full.svg" alt="image star"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="section-testimonials__cards__card__content">
+          <p>${radomComment}
+          </p>
+        </div>
+        <span>${dataFormatada}</span>
+      </article>      
+    `;
+  });
+}
+
 btnSearch.addEventListener("click", searchCourses);
 
 allCourses.addEventListener("click", printAllCourses);
@@ -119,3 +182,5 @@ btnExploreCourses.addEventListener("click", exploreCourses);
 selectOption.addEventListener("change", selectOptionChange);
 
 selectOption.addEventListener("change", filterSearchCourses);
+
+btnUpdateTestimonials.addEventListener("click", loadTestimonials);

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -124,12 +123,23 @@
             </div>
           </div>
           <div id="listCourses" class="section-courses__cards"></div>
-          <a id="section-courses__info__all-courses" href="#"
-            >Ver todos os cursos &#8594;</a
-          >
+          <button id="section-courses__info__all-courses" href="#">
+            Ver todos os cursos &#8594;
+          </button>
+        </div>
+      </section>
+
+      <section id="section-explore-testimonials" class="section-testimonials">
+        <div class="section-testimonials__content container">
+          <h3>Depoimentos</h3>
+          <h2>O que nossos alunos dizem</h2>
+          <div id="listTestimonials" class="section-testimonials__cards"></div>
+          <button id="section-testimonials__update__testimonials" href="#">
+            Ver outros depoimentos &#8594;
+          </button>
         </div>
       </section>
     </main>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" type="module"></script>
   </body>
 </html>

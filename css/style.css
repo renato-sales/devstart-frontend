@@ -357,7 +357,102 @@ header {
 }
 
 #section-courses__info__all-courses {
+  background-color: var(--gray-light);
+  border: none;
+  width: fit-content;
   text-decoration: none;
   color: var(--blue-medium);
+  font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+#section-courses__info__all-courses:hover {
+  color: var(--blue-dark);
+  transition: 0.5s;
+}
+
+.section-testimonials {
+  background-color: var(--blue-light);
+  color: var(--gray-dark);
+  padding: 4rem;
+}
+
+.section-testimonials__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-testimonials__content h3 {
+  color: var(--blue-medium);
+  text-transform: uppercase;
+}
+
+.section-testimonials__content h2 {
+  font-size: 3rem;
+}
+
+.section-testimonials__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.section-testimonials__cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.section-testimonials__cards__card__content {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-testimonials__cards__card__content img {
+  width: 8rem;
+  align-self: center;
+  border-radius: 100%;
+}
+
+.section-testimonials__cards__card__content__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-testimonials__cards__card__content__texts h3 {
+  text-transform: none;
+  color: var(--gray-dark);
+}
+
+.section-testimonials__cards__card__content__texts span {
+  font-size: 1.5rem;
+}
+
+.section-testimonials__cards__card__content__texts img {
+  width: 2rem;
+  background-color: white;
+}
+
+#section-testimonials__update__testimonials {
+  background-color: var(--blue-light);
+  border: none;
+  width: fit-content;
+  text-decoration: none;
+  color: var(--blue-medium);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#section-testimonials__update__testimonials:hover {
+  color: var(--blue-dark);
+  transition: 0.5s;
 }

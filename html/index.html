@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+    />
     <title>DevStart</title>
   </head>
   <body>
@@ -139,7 +143,68 @@
           </button>
         </div>
       </section>
+
+      <section class="section-location">
+        <div class="section-location__content container">
+          <article class="section-location__content__left">
+            <h3>Onde Estamos</h3>
+            <h2>Estamos mais perto do que você imagina</h2>
+            <p>
+              Digite seu CEP e descubra a distância da nossa instituição até
+              você.
+            </p>
+            <div class="section-location__content__search">
+              <input
+                type="text"
+                name="cep"
+                id="searchCep"
+                placeholder="Digite seu CEP"
+              />
+              <button id="btnCalculateCep">Calcular distância &#8594;</button>
+            </div>
+            <div class="section-location__content__info">
+              <div class="section-location__content__info__route">
+                <div class="section-location__content__info__route__house">
+                  <img
+                    src="../assets/main/section_location/location-dot-solid-full.svg"
+                    alt="icon location"
+                  />
+                  <div class="section-location__content__info__route__car">
+                    <span>Sua localização</span>
+                    <p id="userAddress"></p>
+                  </div>
+                </div>
+                <div class="section-location__content__info__route__img-car">
+                  <img
+                    src="../assets/main/section_location/car-solid-full.svg"
+                    alt="icon car"
+                  />
+                </div>
+                <div class="section-location__content__info__route__car">
+                  <span>Nossa instituição</span>
+                  <p>Av Paulista, 1000, São Paulo - SP</p>
+                </div>
+              </div>
+              <div
+                class="section-location__content__info__route__distance-time"
+              >
+                <div>
+                  <p>Distância</p>
+                  <span id="distance"></span>
+                </div>
+                <div>
+                  <p>Tempo estimado</p>
+                  <span id="time"></span>
+                </div>
+              </div>
+            </div>
+            <p>* Valores estimados com base no trânsito atual.</p>
+          </article>
+          <article id="map" class="section-location__content__right"></article>
+        </div>
+      </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="../js/script.js" type="module"></script>
   </body>
 </html>

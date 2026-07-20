@@ -354,6 +354,7 @@ header {
 
 .section-courses__cards__card__info__price-button a:hover {
   background-color: var(--blue-dark);
+  transition: 0.3s;
 }
 
 #section-courses__info__all-courses {
@@ -455,4 +456,118 @@ header {
 #section-testimonials__update__testimonials:hover {
   color: var(--blue-dark);
   transition: 0.5s;
+}
+
+.section-location {
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  padding: 4rem;
+}
+
+.section-location__content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+}
+
+.section-location__content__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-location__content h3 {
+  color: var(--blue-medium);
+  text-transform: uppercase;
+}
+
+.section-location__content h2 {
+  font-size: 3rem;
+}
+
+.section-location__content__search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-location__content__search input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 3px solid var(--gray-light);
+  outline: none;
+  width: 15vw;
+}
+
+.section-location__content__search button {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--blue-light);
+  background-color: var(--blue-medium);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.section-location__content__search button:hover {
+  background-color: var(--blue-dark);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section-location__content__info {
+  background-color: white;
+  padding: 2rem;
+}
+
+.section-location__content__info__route {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-location__content__info__route__house {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-location__content__info__route img {
+  width: 3rem;
+}
+
+.section-location__content__info__route__car span {
+  font-weight: 600;
+}
+
+.section-location__content__info__route__car {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-location__content__info__route__img-car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-location__content__info__route__distance-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-top: 3px solid var(--gray-light);
+}
+
+.section-location__content__info__route__distance-time span {
+  color: var(--blue-medium);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.section-location__content__right {
+  width: 95%;
 }

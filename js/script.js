@@ -9,6 +9,13 @@ import { renderCompanyMap } from "./modules/map.js";
 import { calculateRoute } from "./modules/route.js";
 import { loadTestimonials } from "./modules/testimonials.js";
 
+const menuToggle = document.querySelector("#menuToggle");
+const navLinks = document.querySelector(".header__links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 const linkCourses = document.querySelector("#link-courses");
 const linkHero = document.querySelector("#link-hero");
 

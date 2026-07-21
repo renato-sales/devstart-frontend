@@ -184,7 +184,7 @@
                 </div>
               </div>
             </div>
-            <p>* Valores estimados com base no trânsito atual.</p>
+            <p class="section-location__content__left__description-route">* Valores estimados com base no trânsito atual.</p>
           </article>
           <article id="map" class="section-location__content__right"></article>
         </div>
@@ -231,13 +231,15 @@
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  id="email-contact"
                   placeholder="Email"
+                  required
                 />
                 <textarea
                   name="mensage"
                   id="mensage"
                   placeholder="Mensagem"
+                  required
                 ></textarea>
                 <button type="submit">Enviar Mensagem</button>
               </form>
@@ -280,6 +282,7 @@
               </a>
             </div>
           </article>
+          <div class="footer__info__container-nav-courses">
           <article class="footer__info__articicle__links">
             <h3>Navegação</h3>
             <a href="#">Início</a>
@@ -297,17 +300,19 @@
             <a href="#">Python</a>
             <a href="#">Todos os cursos</a>
           </article>
+          </div>
           <article class="footer__info__articicle__links">
-            <h3>Newsletter</h3>
+            <h3 class="footer__info__articicle__links__newsletter">Newsletter</h3>
             <p>Receba novidades e conteúdos exclusivos no seu e-mail.</p>
             <div class="footer__input">
               <input
                 type="email"
                 name="email"
-                id="email"
+                id="email-newsletter"
                 placeholder="Seu melhor e-mail"
+                required
               />
-              <button>Inscrever-se</button>
+              <button id="btn-newsletter">Inscrever-se</button>
             </div>
           </article>
         </div>

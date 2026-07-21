@@ -837,11 +837,144 @@ footer {
   }
 
   .section-contact__info__left {
-    width: 70vw;
-    margin-left: 6rem;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .footer__info {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100dvw;
+  }
+  .header h2 {
+    font-size: 2rem;
+  }
+  .section-hero__content__left {
+    width: 100dvw;
+  }
+  .section-hero__content__left h1 {
+    font-size: 4rem;
+  }
+  .section-hero__content__left__descriptions {
+    gap: 1rem;
+    padding-inline: 2rem;
+  }
+  .section-hero__content__left__descriptions__info img {
+    width: 3.5rem;
+  }
+  .section-hero__content__left__descriptions__info {
+    gap: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .section-hero__content__left__buttons {
+    padding-inline: 3rem;
+  }
+  .section-hero__content__left__buttons {
+    gap: 1rem;
+  }
+  .section-hero__content__left__buttons__button {
+    padding: 1rem 2rem;
+  }
+  .section-hero__content__left__buttons__button-learn-more {
+    padding: 1rem 2rem;
+  }
+
+  .section-hero__content__right img {
+    width: 100dvw;
+    padding-inline: 1rem;
+  }
+
+  .section-courses__content h3 {
+    text-align: center;
+  }
+
+  .section-courses__content__search input {
+    width: 30vw;
+  }
+
+  .section-courses__content__filter__select-level select {
+    padding: 1rem 2rem;
+  }
+
+  .section-courses__content__filter__select-level select option {
+    font-size: 1rem;
+  }
+
+  .section-courses__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-testimonials__content h3 {
+    text-align: center;
+  }
+
+  .section-testimonials__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-location__content h3 {
+    text-align: center;
+  }
+
+  .section-location__content__search input {
+    width: 35vw;
+  }
+  .section-location__content__search button {
+    padding: 1rem 1.5rem;
+  }
+
+  .section-location__content__info__route {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-location__content__left {
+    gap: 1.5rem;
+  }
+
+  .section-location__content__left__description-route {
+    font-size: 1.3rem;
+  }
+
+  .section-location__content__right {
+    height: 350px;
+  }
+
+  .section-contact__info h3 {
+    text-align: center;
+  }
+
+  .section-contact__info__left {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer__info h2 {
+    text-align: center;
+  }
+
+  .footer__info__articicle__redes-sociais {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__info__container-nav-courses {
+    display: none;
+  }
+
+  .footer__info__articicle__links__newsletter {
+    text-align: center;
   }
 }

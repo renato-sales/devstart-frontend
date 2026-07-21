@@ -18,9 +18,11 @@ const linkTestimonials = document.querySelector("#link-testimonials");
 const linkCourses = document.querySelector("#link-courses");
 const linkHero = document.querySelector("#link-hero");
 
+const inputNewsletter = document.querySelector("#email-newsletter");
 const input = document.querySelector("#searchCourse");
 const listCourses = document.querySelector("#listCourses");
 const btnSearch = document.querySelector("#btnSearch");
+const btnNewsletter = document.querySelector("#btn-newsletter");
 const allCourses = document.querySelector(
   "#section-courses__info__all-courses"
 );
@@ -93,4 +95,12 @@ btnCalculateCep.addEventListener("click", calculateRoute);
 
 window.addEventListener("DOMContentLoaded", () => {
   renderCompanyMap();
+});
+
+btnNewsletter.addEventListener("click", () => {
+  const textInput = inputNewsletter.value;
+  if (textInput === "") {
+    alert("Digite um email para se inscrever");
+    return;
+  }
 });

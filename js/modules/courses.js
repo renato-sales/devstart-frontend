@@ -24,7 +24,16 @@ export async function searchCourses(input, listCourses) {
 
 export async function loadCourses(listCourses) {
   const data = await getCourses();
-  const quantity = window.innerWidth <= 768 ? 4 : 3;
+  let quantity = 0;
+
+  if (window.innerWidth <= 480) {
+    quantity = 2;
+  } else if (window.innerWidth <= 768) {
+    quantity = 4;
+  } else {
+    quantity = 3;
+  }
+
   const courses = data.slice(0, quantity);
   printCourses(courses, listCourses);
 }

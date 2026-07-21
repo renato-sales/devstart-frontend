@@ -691,14 +691,13 @@ footer {
 .footer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .footer__info {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
-  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 15rem;
 }
 
 .footer__info article {
@@ -714,6 +713,11 @@ footer {
 
 .footer__info__articicle__redes-sociais img {
   width: 3rem;
+}
+
+.footer__info__container-nav-courses {
+  display: flex;
+  gap: 15rem;
 }
 
 .footer__info__articicle__links a {
@@ -758,6 +762,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    width: 100dvw;
+  }
   .header {
     position: relative;
   }
@@ -841,8 +848,24 @@ footer {
     margin: 0 auto;
   }
 
+  footer {
+    padding-inline: 2rem;
+  }
+
   .footer__info {
     padding: 2rem;
+  }
+
+  .footer__info h2 {
+    text-align: center;
+  }
+
+  .footer__info__articicle__links__newsletter {
+    text-align: center;
+  }
+
+  .footer__info__container-nav-courses {
+    display: none;
   }
 }
 

@@ -20,12 +20,12 @@
         <h2>&lt;Dev<span class="header__logotype">Start</span>/&gt;</h2>
         <button class="header__menu-toggle" id="menuToggle">☰</button>
         <nav class="header__links">
-          <a id="link-hero" href="#">Início</a>
+          <a href="index.html">Início</a>
           <a id="link-courses" href="#">Cursos</a>
-          <a href="#">Sobre nós</a>
+          <a id="link-hero" href="#">Sobre nós</a>
           <a id="link-testimonials" href="#">Depoimentos</a>
           <a id="link-location" href="#">Localização</a>
-          <a href="#">Contato</a>
+          <a id="link-contact" href="#">Contato</a>
         </nav>
         <a class="header__link-style" href="#"
           ><img src="assets/user-regular-full.svg" alt="image user" />Entrar</a
@@ -187,6 +187,63 @@
             <p>* Valores estimados com base no trânsito atual.</p>
           </article>
           <article id="map" class="section-location__content__right"></article>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="section-contact__info container">
+          <div class="section-contact__info__cards">
+            <article class="section-contact__info__right">
+              <h3>Entre em contato</h3>
+              <h2>Fale com nossa equipe</h2>
+              <p>
+                Tem alguma dúvidas sobre nossos cursos ou deseja mais
+                informações? Preencha o formulário ou utilize um dos canais ao
+                lado. Nossa equipe responderá em até 24 horas.
+              </p>
+              <div class="section-contact__info__right__content">
+                <img src="./assets/phone-solid-full.svg" alt="icon phone" />
+                <p>(81) 98765-4321</p>
+              </div>
+              <div class="section-contact__info__right__content">
+                <img
+                  src="./assets/envelope-solid-full.svg"
+                  alt="icon envelope"
+                />
+                <p>contato@devstart.com.br</p>
+              </div>
+              <div class="section-contact__info__right__content">
+                <img
+                  src="./assets/location-dot-solid-full.svg"
+                  alt="icon location"
+                />
+              <p>Recife - PE</p>
+            </article>
+            <article class="section-contact__info__left">
+              <form action="#">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <textarea
+                  name="mensage"
+                  id="mensage"
+                  placeholder="Mensagem"
+                ></textarea>
+                <button type="submit">Enviar Mensagem</button>
+              </form>
+            </article>
+            
+          </div>
         </div>
       </section>
     </main>

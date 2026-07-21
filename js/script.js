@@ -12,9 +12,7 @@ import { loadTestimonials } from "./modules/testimonials.js";
 const menuToggle = document.querySelector("#menuToggle");
 const navLinks = document.querySelector(".header__links");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+const linkContact = document.querySelector("#link-contact");
 const linkLocation = document.querySelector("#link-location");
 const linkTestimonials = document.querySelector("#link-testimonials");
 const linkCourses = document.querySelector("#link-courses");
@@ -37,6 +35,9 @@ const btnUpdateTestimonials = document.querySelector(
 );
 const btnCalculateCep = document.querySelector("#btnCalculateCep");
 
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
 document.addEventListener("DOMContentLoaded", () => {
   loadCourses(listCourses);
 });
@@ -66,6 +67,12 @@ linkTestimonials.addEventListener("click", () =>
 
 linkLocation.addEventListener("click", () =>
   document.querySelector(".section-location").scrollIntoView({
+    behavior: "smooth",
+  })
+);
+
+linkContact.addEventListener("click", () =>
+  document.querySelector(".section-contact").scrollIntoView({
     behavior: "smooth",
   })
 );

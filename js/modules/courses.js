@@ -44,17 +44,17 @@ export function printCourses(courses, listCourses) {
 
           <div class="section-courses__cards__card__info__specific">
             <div class="section-courses__cards__card__info__specific__time-level">
-              <img src="../assets/main/section-courses/clock-regular-full.svg"/>
+              <img src="assets/clock-regular-full.svg"/>
               <span>${course.duracao}</span>
             </div>
 
             <div class="section-courses__cards__card__info__specific__time-level">
-              <img src="../assets/main/section-courses/signal-solid-full.svg"/>
+              <img src="assets/signal-solid-full.svg"/>
               <span>${course.nivel}</span>
             </div>
 
             <div class="section-courses__cards__card__info__specific__time-level">
-              <img src="../assets/main/section-courses/star-solid-full.svg"/>
+              <img src="assets/star-solid-full.svg"/>
               <span>${course.classificacao}</span>
             </div>
           </div>

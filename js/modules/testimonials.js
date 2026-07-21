@@ -24,11 +24,11 @@ export function printTestimonials(testimonials, listTestimonals) {
             <h3>${testimonial.name.first} ${testimonial.name.last}</h3>
             <span>${testimonial.login.username}</span>
             <div>
-              <img src="../assets/main/section-courses/star-solid-full.svg"/>
-              <img src="../assets/main/section-courses/star-solid-full.svg"/>
-              <img src="../assets/main/section-courses/star-solid-full.svg"/>
-              <img src="../assets/main/section-courses/star-solid-full.svg"/>
-              <img src="../assets/main/section-courses/star-solid-full.svg"/>
+              <img src="assets/star-solid-full.svg"/>
+              <img src="assets/star-solid-full.svg"/>
+              <img src="assets/star-solid-full.svg"/>
+              <img src="assets/star-solid-full.svg"/>
+              <img src="assets/star-solid-full.svg"/>
             </div>
           </div>
         </div>

@@ -15,7 +15,8 @@ const navLinks = document.querySelector(".header__links");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
-
+const linkLocation = document.querySelector("#link-location");
+const linkTestimonials = document.querySelector("#link-testimonials");
 const linkCourses = document.querySelector("#link-courses");
 const linkHero = document.querySelector("#link-hero");
 
@@ -53,6 +54,18 @@ linkCourses.addEventListener("click", () =>
 
 linkHero.addEventListener("click", () =>
   document.querySelector(".header").scrollIntoView({
+    behavior: "smooth",
+  })
+);
+
+linkTestimonials.addEventListener("click", () =>
+  document.querySelector("#section-explore-testimonials").scrollIntoView({
+    behavior: "smooth",
+  })
+);
+
+linkLocation.addEventListener("click", () =>
+  document.querySelector(".section-location").scrollIntoView({
     behavior: "smooth",
   })
 );

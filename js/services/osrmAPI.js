@@ -1,6 +1,6 @@
 export const companyCoords = {
-  lat: -7.9890553,
-  lon: -34.929907,
+  lat: -8.1219717,
+  lon: -34.8959942,
 };
 
 export async function getRealRoute(userCoords) {

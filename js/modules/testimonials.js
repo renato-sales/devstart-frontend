@@ -4,7 +4,8 @@ import { formatDate } from "../utils/formatDate.js";
 
 export async function loadTestimonials(listTestimonals) {
   const data = await getRandomUsers();
-  const testimonials = data.slice(0, 3);
+  const quantity = window.innerWidth <= 768 ? 4 : 3;
+  const testimonials = data.slice(0, quantity);
 
   printTestimonials(testimonials, listTestimonals);
 }

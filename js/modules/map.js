@@ -1,4 +1,4 @@
-import { companyCoords } from "../services/osrm.js";
+import { companyCoords } from "../services/osrmAPI.js";
 
 let map;
 

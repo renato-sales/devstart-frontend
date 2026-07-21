@@ -1,6 +1,6 @@
-import { getCoordinates } from "../services/nominatim.js";
-import { getRealRoute } from "../services/osrm.js";
-import { getAddressByCep } from "../services/viaCep.js";
+import { getCoordinates } from "../services/nominatimAPI.js";
+import { getRealRoute } from "../services/osrmAPI.js";
+import { getAddressByCep } from "../services/viaCepAPI.js";
 import { renderMap } from "./map.js";
 import { showAddress, showRouteInfo } from "./ui.js";
 

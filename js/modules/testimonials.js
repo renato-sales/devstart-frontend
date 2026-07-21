@@ -1,5 +1,5 @@
 import { comments } from "../../data/comments.js";
-import { getRandomUsers } from "../services/randomUser.js";
+import { getRandomUsers } from "../services/randomUserAPI.js";
 import { formatDate } from "../utils/formatDate.js";
 
 export async function loadTestimonials(listTestimonals) {
